@@ -1,0 +1,11 @@
+# Python
+.venv/
+__pycache__/
+
+# Libs
+Deepskin/
+Deepskin-main/
+Deepskin.zip
+
+# Outputs
+output/
