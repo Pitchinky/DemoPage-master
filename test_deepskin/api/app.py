@@ -2,6 +2,10 @@ import os
 import uuid
 import shutil
 import asyncio
+import sys
+
+# Ajouter 'src' au chemin d'importation
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
 from contextlib import asynccontextmanager
 from fastapi.middleware.cors import CORSMiddleware
@@ -11,6 +15,13 @@ from fastapi.responses import RedirectResponse, FileResponse, JSONResponse
 
 from api.my_env import my_env
 from src.wound_image import WoundImage
+
+import sys
+import os
+
+
+
+
 
 TEMPLATES = os.path.join(
     os.path.dirname(
