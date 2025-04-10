@@ -11,8 +11,8 @@ import tensorflow as tf
 
 from numpy import ndarray
 from typing import Optional
-from deepskin.imgproc import imfill, get_perilesion_mask
-from deepskin import wound_segmentation, evaluate_PWAT_score
+from .deepskin.imgproc import imfill, get_perilesion_mask
+from .deepskin import wound_segmentation, evaluate_PWAT_score
 
 
 from src.rgb import RGB

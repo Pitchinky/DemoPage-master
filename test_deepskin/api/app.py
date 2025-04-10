@@ -4,13 +4,6 @@ import shutil
 import asyncio
 import sys
 
-from .my_env import my_env
-
-# Ajouter 'src' au chemin d'importation
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-from src.wound_image import WoundImage
-
-
 from contextlib import asynccontextmanager
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, File, UploadFile, HTTPException
@@ -18,7 +11,9 @@ from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi.responses import RedirectResponse, FileResponse, JSONResponse
 
 
-
+from .my_env import my_env
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from src.wound_image import WoundImage
 
 
 
