@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from .__version__ import __version__
+#from .__version__ import __version__
 # import the segmentation model
 from .model import deepskin_model
 # import useful constant values
