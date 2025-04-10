@@ -4,7 +4,7 @@ import shutil
 import asyncio
 import sys
 
-from my_env import my_env
+from .my_env import my_env
 from src.wound_image import WoundImage
 # Ajouter 'src' au chemin d'importation
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
