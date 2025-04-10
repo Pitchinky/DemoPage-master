@@ -414,7 +414,7 @@ header h1 {
     <script>
         async function loadExpectedFormats() {
             try {
-                const response = await fetch("https://monapp.render.com/expected_formats");
+                const response = await fetch("https://demopage-master.onrender.com/expected_formats");
                 const formats = await response.json();
                 const select = document.getElementById("expected_format");
                 select.innerHTML = formats.map(format => `<option value="${format}">${format}</option>`).join("");
