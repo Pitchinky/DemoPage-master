@@ -13,7 +13,7 @@ from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi.responses import RedirectResponse, FileResponse, JSONResponse
 
-from api.my_env import my_env
+from my_env import my_env
 from src.wound_image import WoundImage
 
 import sys
