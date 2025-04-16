@@ -454,6 +454,7 @@ header h1 {
                 const response = await fetch(`https://demopage-master.onrender.com/upload?expected_format=${document.getElementById("expected_format").value}`, {
                     method: "POST",
                     body: formData
+                    
                 });
 
                 if (response.ok) {
