@@ -66,7 +66,7 @@ app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://pitchinky.github.io"],  # Replace with specific origins if needed
+    allow_origins=["https://pitchinky.github.io","https://healthmap.uni-mainz.de"],  # Replace with specific origins if needed
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
