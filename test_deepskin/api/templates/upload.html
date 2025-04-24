@@ -414,7 +414,7 @@ header h1 {
     <script>
         async function loadExpectedFormats() {
             try {
-                const response = await fetch("https://demopage-master.onrender.com/expected_formats");
+                const response = await fetch("https://healthmap.uni-mainz.de/DemoPage/test_deepskin/api/expected_formats");
                 const formats = await response.json();
                 const select = document.getElementById("expected_format");
                 select.innerHTML = formats.map(format => `<option value="${format}">${format}</option>`).join("");
@@ -451,7 +451,7 @@ header h1 {
 
             try {
                 document.getElementById("response").innerHTML = "Processing...";
-                const response = await fetch(`https://demopage-master.onrender.com/upload?expected_format=${document.getElementById("expected_format").value}`, {
+                const response = await fetch(`https://healthmap.uni-mainz.de/DemoPage/test_deepskin/api/upload?expected_format=${document.getElementById("expected_format").value}`, {
                     method: "POST",
                     body: formData
                     
